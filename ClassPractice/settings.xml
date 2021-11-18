@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="e0bd1d12-e9b8-407f-bea2-a2da13a6cebd" name="ClassPractice" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e0bd1d12-e9b8-407f-bea2-a2da13a6cebdfileName">ClassPractice</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="3153b45e-6668-421f-99b9-d95413e1e447">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testSuite>

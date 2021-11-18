@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="user" path="/api/v1/user/" id="39eb909b-225d-4439-91c1-a73a1042a012" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="39eb909b-225d-4439-91c1-a73a1042a012fileName">user</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="4072ea2f-5c8e-4688-80df-43a92a7b8e0a" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>id</con:name>
+        <con:value/>
+        <con:style>TEMPLATE</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="retrieveUser" id="1f9c08d1-7e50-43b8-bbed-84ead311c97c" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://www.test-insurance.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://www.test-insurance.com/api/v1/user/</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="id" value="2022"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>id</con:entry>
+      </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="3153b45e-6668-421f-99b9-d95413e1e447">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="3153b45e-6668-421f-99b9-d95413e1e447">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:method name="Method 2" id="1eec4b55-7d79-43fe-b11e-2765585b4d26" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="createUser" id="19fc0eea-e30c-468d-8948-f5f84ac0ae66" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://www.test-insurance.com</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder/>
+      <con:environmentSpec>
+        <con:entry environmentId="3153b45e-6668-421f-99b9-d95413e1e447">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="3153b45e-6668-421f-99b9-d95413e1e447">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:method name="Method 3" id="2d98154a-4742-4003-a4e7-78322b27ce96" method="PUT">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>id</con:name>
+        <con:value/>
+        <con:style>TEMPLATE</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="updateUser" id="cfff9020-d1f3-46d4-bd10-99c80edb5ed5" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://www.test-insurance.com</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>id</con:entry>
+      </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="3153b45e-6668-421f-99b9-d95413e1e447">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="3153b45e-6668-421f-99b9-d95413e1e447">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:method name="Method 4" id="9b961384-fd76-4a9b-a0db-c167e7097f03" method="DELETE">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="deleteUser" id="0c191873-eaf6-4205-bdb8-c8526b192aa8" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://www.test-insurance.com</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder/>
+      <con:environmentSpec>
+        <con:entry environmentId="3153b45e-6668-421f-99b9-d95413e1e447">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="3153b45e-6668-421f-99b9-d95413e1e447">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="3153b45e-6668-421f-99b9-d95413e1e447">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

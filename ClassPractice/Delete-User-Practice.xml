@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="223fdd8d-ff75-4b3e-946c-1fac2272860b" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Delete User Practice" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="223fdd8d-ff75-4b3e-946c-1fac2272860bfileName">Delete-User-Practice</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="130f76fa-71d4-4c40-a376-9e75b7775503">
+    <con:settings/>
+    <con:config service="GetUser" methodName="Method 4" resourcePath="/api/v1/user/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="bf7a92ac-9c55-48ac-a728-7ad288e1baf0" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://www.test-insurance.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://www.test-insurance.com/api/v1/user/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="6bf255a0-7fe5-41ec-bb4d-9d5dc1a30106" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="b63dc303-ab97-49c7-ab9f-6ef75bba3d0e" name="Response SLA">
+          <con:configuration>
+            <SLA>2000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

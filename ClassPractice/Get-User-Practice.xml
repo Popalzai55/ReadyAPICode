@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e6c4146b-7731-4b95-baae-95e9b5a5fab7" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Get User Practice" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e6c4146b-7731-4b95-baae-95e9b5a5fab7fileName">Get-User-Practice</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="b288326f-0c55-45ad-8fc5-5825e9e2dd2e">
+    <con:settings/>
+    <con:config service="GetUser" resourcePath="/api/v1/user/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="1f9c08d1-7e50-43b8-bbed-84ead311c97c" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://www.test-insurance.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://www.test-insurance.com/api/v1/user/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="735a2527-249b-4446-ab6b-d21ee5fdc7b4" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="7d13abc3-0671-45dc-9ec9-658eae3609fa" name="Response SLA">
+          <con:configuration>
+            <SLA>2000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${#[ClassPractice#CreateUserPractice#REST Request]#Response}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="3153b45e-6668-421f-99b9-d95413e1e447">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
